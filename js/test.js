@@ -20,7 +20,7 @@ $.getJSON( "https://musicbrainz.org/ws/2/release/" + set.album + "?inc=aliases+a
 	$("#label").html( album['label-info'][0].label.name );
 
 	//cover art
-	$.getJSON( "http://coverartarchive.org/release/" + set.album + "", function( cover ) {
+	$.getJSON( "https://coverartarchive.org/release/" + set.album + "", function( cover ) {
 		$("#cover").attr("src", cover.images[0].thumbnails.small);
 
 		//artist info
